@@ -8,7 +8,7 @@
 > A machine learning project that analyzes Apple Music metadata and Spotify popularity metrics to predict track success.
 
 ## 🔗 Try the App
-👉 **[Click here to try the Hit Song Simulator](YOUR_STREAMLIT_APP_URL_HERE)**
+👉 **[Click here to try the Hit Song Simulator](https://hit-song-predictor-mmjufawd7twrfbgoysiwkf.streamlit.app)**
 *(If you haven't deployed it yet, you can remove this link)*
 
 ---
@@ -31,6 +31,7 @@ This project bridges the gap between **Apple Music's rich metadata** and **Spoti
 The analysis revealed that **Momentum** and **Fame** are the dominant drivers of success.
 - **Momentum:** A hit song acts as a springboard; high popularity on a previous track significantly boosts the next one (`coef = 0.54`).
 - **Fame:** Established artist popularity acts as a safety net against failure (`coef = 0.42`).
+![Regression Plane](./images/Regression_Plane_Fame_Momentum.png)
 
 ### 2. The "2-Minute Cliff" (Duration Analysis)
 By binning song duration into 5 distinct categories, I discovered a non-linear relationship.
@@ -73,7 +74,7 @@ I built a Streamlit web application to make the regression model accessible to n
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/your-username/apple-music-analysis.git](https://github.com/your-username/apple-music-analysis.git)
+git clone [https://github.com/lucytheboss/apple-music-analysis.git](https://github.com/your-username/apple-music-analysis.git)
 cd apple-music-analysis
 ```
 2. Install dependencies
@@ -91,11 +92,3 @@ streamlit run app.py
 - **Data Proxy**: Spotify popularity was used as a proxy for Apple Music performance due to API limitations. User behavior may differ between platforms.
 - **External Factors**: The model explains 70% of the variance. The remaining 30% is likely driven by unmeasured external factors such as marketing budgets, TikTok trends, and social media buzz.
 - **Future Work**: Incorporating social media sentiment analysis (NLP) could improve the model's accuracy.
-
----
-
-### 📸 How to prepare the images
-To make this README look great, you need to create an `images` folder in your project and add two screenshots:
-
-1.  **`duration_plot.png`**: Go to your Jupyter Notebook, find the Boxplot showing the 5 duration bins, and save it as an image.
-2.  **`dashboard_screenshot.png`**: Run your Streamlit app, take a screenshot of the interface (showing the sliders and the prediction score), and save it.
