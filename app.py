@@ -8,7 +8,7 @@ st.set_page_config(page_title="Hit Song Simulator", page_icon="🎵")
 
 @st.cache_resource
 def load_model():
-    with open('spotify_model.pkl', 'rb') as f:
+    with open('apple_model.pkl', 'rb') as f:
         artifact = pickle.load(f)
     return artifact['model'], artifact['columns']
 
