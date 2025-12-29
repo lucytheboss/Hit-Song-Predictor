@@ -15,7 +15,7 @@ def load_model():
 try:
     model, model_columns = load_model()
 except FileNotFoundError:
-    st.error("Error: 'spotify_model.pkl' not found. Please run Part 1 in your notebook first!")
+    st.error("Error: 'apple_model.pkl' not found. Please run Part 1 in your notebook first!")
     st.stop()
 
 # 2. SIDEBAR (USER INPUTS)
