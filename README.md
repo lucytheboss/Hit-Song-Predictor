@@ -9,7 +9,6 @@
 
 ## 🔗 Try the App
 👉 **[Click here to try the Hit Song Simulator](https://hit-song-predictor-mmjufawd7twrfbgoysiwkf.streamlit.app)**
-*(If you haven't deployed it yet, you can remove this link)*
 
 ---
 
